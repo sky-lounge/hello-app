@@ -30,8 +30,6 @@ jobs:
         context: .
         push: false
         tags: "${{ env.IMAGE_NAME }}"
-    - name: Checkout
-      uses: actions/checkout@v3
     - id: auth
       name: Authenticate to Google Cloud
       uses: google-github-actions/auth@v0
